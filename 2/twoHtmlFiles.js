@@ -9,7 +9,7 @@ const {
     sendFile
 } = require(path.join(__dirname, 'functionLibrary.js'))
 
-const homePath=path.join(__dirname, 'home.html');
+const homePath=path.join(__dirname, '/pages/pageB.html');
 const secondPath=path.join(__dirname, 'pageB.html');
 
 const server = http.createServer((req,res)=>{
@@ -26,7 +26,7 @@ const server = http.createServer((req,res)=>{
     } else if (route.startsWith('/styles/')){
         sendFile(res,path.join(__dirname,route), 'text/css');
     } else if (route.startsWith('/pages/')){
-        sendFile(res,path.join(__dirname,route));
+        sendFile(res,path.join(__dirname,route), 'text/css');
     }
     else {
         res.statusCode=404;
