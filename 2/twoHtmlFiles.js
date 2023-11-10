@@ -4,7 +4,7 @@ const http=require('http');
 
 const path = require('path');
 
-const {port, host}=require(path.join(__dirname, 'config.json'));
+const {port,host}=require(path.join(__dirname, 'config.json'));
 const {
     sendFile
 } = require(path.join(__dirname, 'functionLibrary.js'))
@@ -25,6 +25,8 @@ const server = http.createServer((req,res)=>{
         sendFile(res,secondPath)
     } else if (route.startsWith('/styles/')){
         sendFile(res,path.join(__dirname,route), 'text/css');
+    } else if (route.startsWith('/pages/')){
+        sendFile(res,path.join(__dirname,route));
     }
     else {
         res.statusCode=404;
