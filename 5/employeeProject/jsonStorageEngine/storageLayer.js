@@ -51,7 +51,8 @@ return {
     getFromStorage,
     addToStorage, 
     removeFromStorage,
-    getKeys
+    getKeys,
+    primary_key
 }
 } // end of createStorageLayer
 

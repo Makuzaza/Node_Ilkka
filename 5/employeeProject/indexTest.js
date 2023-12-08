@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const {storage, storageEngine} = require('./config_copy.json');
+const {storage, storageEngine} = require('./config.json');
 // const {storage, storageEngine} = require('./config.json');
 
 const storagePath  = path.join(__dirname, storage.folder);

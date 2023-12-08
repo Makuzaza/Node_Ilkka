@@ -33,5 +33,19 @@
         "lastname": "River",
         "department": "ict",
         "salary": 5000
+    },
+    {
+        "id": 12,
+        "firstname": "ws",
+        "lastname": "sa",
+        "department": "as",
+        "salary": 11
+    },
+    {
+        "id": 22,
+        "firstname": "Maria",
+        "lastname": "Ku",
+        "department": "aa",
+        "salary": 10000
     }
 ]

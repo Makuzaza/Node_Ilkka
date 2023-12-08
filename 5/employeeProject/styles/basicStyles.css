@@ -1,0 +1,11 @@
+h1 {
+    color: green;
+}
+main {
+    color: aliceblue;
+}
+
+body {
+    background-image: url("/images/test.png");
+    background-repeat: repeat;
+}
