@@ -1,0 +1,34 @@
+h1 {
+    color: green;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 0.5em; 
+}
+
+thead {
+    background-color: yellow;
+}
+
+input[readonly]{
+    background-color: lightgray;
+}
+
+p.error{
+    border:dashed red 2px;
+    padding: 0.5em;
+}
+
+p.info{
+    border:solid green 2px;
+    padding: 0.5em;
+}
+
+h1.error{
+    color: red;
+}
