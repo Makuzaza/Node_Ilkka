@@ -3,10 +3,10 @@
 (function(){
 
     let idField;
-    let nameField;
-    let typeField;
-    let amountField;
-    let processorField;
+    let firstnameField;
+    let lastnameField;
+    let departmentField;
+    let salaryField;
     let resultarea;
 
     document.addEventListener('DOMContentLoaded', init);
@@ -14,10 +14,10 @@
     function init(){
         resultarea=document.getElementById('resultarea');
         idField=document.getElementById('id');
-        nameField=document.getElementById('name');
-        typeField=document.getElementById('type');
-        amountField=document.getElementById('amount');
-        processorField=document.getElementById('processor');
+        firstnameField=document.getElementById('firstname');
+        lastnameField=document.getElementById('lastname');
+        departmentField=document.getElementById('department');
+        salaryField=document.getElementById('salary');
 
         document.getElementById('submit').addEventListener('click', send);
 
@@ -27,30 +27,30 @@
 
     function clear(){
         idField.value='';
-        nameField.value='';
-        typeField.value='';
-        amountField.value='';
-        processorField.value='';
+        firstnameField.value='';
+        lastnameField.value='';
+        departmentField.value='';
+        salaryField.value='';
         resultarea.textContent='';
         resultarea.removeAttribute('class');
     }
 
     async function send(){
-        const computer={
+        const person={
             id:+idField.value,
-            name:nameField.value,
-            type:typeField.value,
-            amount:+amountField.value,
-            processor:processorField.value
+            firstname:firstnameField.value,
+            lastname:lastnameField.value,
+            department:departmentField.value,
+            salary:+salaryField.value
         };
 
         try{
             const options={
                 method:'POST',
-                body:JSON.stringify(computer),
+                body:JSON.stringify(person),
                 headers:{'Content-Type':'application/json'}
             };
-            const data=await fetch('/addcomputer', options);
+            const data=await fetch('/addPerson', options);
             const result=await data.json();
 
             updateStatus(result)

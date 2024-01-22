@@ -61,7 +61,9 @@ async function send(){
     }
     catch(err){
         showErrorMessage(err.message);
+
     }
+
 }
 
 function updatePage(data){
@@ -72,18 +74,19 @@ function updatePage(data){
         showErrorMessage('Nothing found');
     }
     else{
-        const htmlString=data.map(item=>createComputer(item)).join(' ');
+        const htmlString=data.map(item=>createPerson(item)).join(' ');
         resultarea.innerHTML=htmlString;
+
     }
 }
 
-function createComputer(computer){
-    return `<div class="computer">
-    <p>id: ${computer.id}</p>
-    <p>Name: ${computer.name}</p>
-    <p>Type: ${computer.type}</p>
-    <p>Amount: ${computer.amount}</p>
-    <p>Processor: ${computer.processor}</p>
+function createPerson(person){
+    return `<div class="person">
+    <p>id: ${person.id}</p>
+    <p>First name: ${person.firstname}</p>
+    <p>Last name: ${person.lastname}</p>
+    <p>Department: ${person.department}</p>
+    <p>Salary: ${person.salary}</p>
     <div/>`
 }
 function showErrorMessage(message){

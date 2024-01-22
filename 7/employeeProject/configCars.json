@@ -6,11 +6,7 @@
         "dataStorageFile":"dataStorageLayer.js"
     },
     "storage":{
-        "folder":"computerRegister",
+        "folder":"carRegister",
         "storageConfigFile":"storageConfig.json"
-    },
-    "library":{
-        "folder":"library",
-        "requestHandler":"libraryForRequest.js"
     }
 }

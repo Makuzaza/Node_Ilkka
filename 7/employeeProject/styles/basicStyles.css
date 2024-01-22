@@ -1,12 +1,12 @@
 h1 {
-    color: rgb(129, 217, 235);
+    color: green;
 }
 main {
     color: aliceblue;
 }
 
 body {
-    background-image: url("/images/test.jpg");
+    background-image: url("/images/test.png");
     background-repeat: repeat;
 }
 
@@ -15,5 +15,5 @@ body {
 }
 
 .info {
-    color:rgb(235, 104, 206)
+    color:green
 }

@@ -46,4 +46,24 @@ app.get('/users', (req, res) => res.render('users', {
 
 }));
 
+app.get('/cars', (req, res) => {
+    const cars = [
+        {model: 'Fast GT', licence: 'ABC-1'},
+        {model: 'Errare', licence: 'XYZ-123'},
+        {model: 'Fast GT', licence: 'HI-1'},
+        {model: 'MbW', licence: 'A-1'}
+    ];
+    res.render('tabledemo', {cars});
+});
+
+app.get('/carsif', (req, res) => {
+    const cars = [
+        {model: 'Fast GT', licence: 'ABC-1'},
+        {model: 'Errare', licence: 'XYZ-123'},
+        {model: 'Fast GT', licence: 'HI-1'},
+        {model: 'MbW', licence: 'A-1'}
+    ];
+    res.render('tabledemoif', {cars});
+});
+
 app.listen(port, host, () => console.log(`${host}:${port} serving...`));

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "firstname": "Leila",
+        "lastname": "Hökki",
+        "department": "ict",
+        "salary": 4000
+    },
+    {
+        "id": 2,
+        "firstname": "Matt",
+        "lastname": "River",
+        "department": "ict",
+        "salary": 4000
+    },
+    {
+        "id": 3,
+        "firstname": "Mary",
+        "lastname": "River",
+        "department": "ict",
+        "salary": 5000
+    },
+    {
+        "id": 3,
+        "firstname": "Vera",
+        "lastname": "River",
+        "department": "ict",
+        "salary": 5000
+    },
+    {
+        "id": 3,
+        "firstname": "Vera",
+        "lastname": "River",
+        "department": "ict",
+        "salary": 5000
+    },
+    {
+        "id": 22,
+        "firstname": "Maria",
+        "lastname": "Ku",
+        "department": "aa",
+        "salary": 10000
+    },
+    {
+        "id": 13,
+        "firstname": "Maria",
+        "lastname": "as",
+        "department": "22",
+        "salary": 22
+    }
+]

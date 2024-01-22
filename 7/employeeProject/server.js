@@ -87,7 +87,7 @@ const server=http.createServer(async (req,res)=>{
             const body=await getRequestPostBodyData(req);
             sendJson(res, await register.get(body.value,body.key))
         }
-        else if(route==='/addcomputer'){
+        else if(route==='/addPerson'){
             const body = await getRequestPostBodyData(req)
             register.insert(body)
             .then(result=>sendJson(res,result))

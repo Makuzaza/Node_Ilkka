@@ -5,3 +5,16 @@ h1 {
 .error {
     color: red
 }
+
+table {
+    border-collapse: collapse;
+}
+
+td,th {
+    border: solid 1px black;
+    padding: 0.5em;
+}
+
+thead {
+    background-color: bisque;
+}
