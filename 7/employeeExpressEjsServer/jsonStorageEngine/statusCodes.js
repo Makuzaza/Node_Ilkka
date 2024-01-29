@@ -7,7 +7,9 @@ const CODES={
     NOT_INSERTED:3,
     ALREADY_IN_USE:4,
     REMOVE_OK:5,
-    NOT_REMOVED:6
+    NOT_REMOVED:6,
+    UPDATE_OK:7,
+    NOT_UPDATED:8
 }
 
 const TYPES={
@@ -50,7 +52,18 @@ const MESSAGES={
         message:`No resource removed with ${key} ${value}`,
         code:CODES.NOT_REMOVED,
         type:TYPES.ERROR
+    }),
+    UPDATE_OK: (key, value)=>({
+        message:`Resource with ${key} ${value} was updated`,
+        code:CODES.UPDATE_OK,
+        type:TYPES.INFO
+    }),
+    NOT_UPDATED: ()=>({
+        message:`Resource was not updated`,
+        code:CODES.NOT_UPDATED,
+        type:TYPES.ERROR
     })
+
 }
 
 module.exports={CODES, TYPES, MESSAGES}

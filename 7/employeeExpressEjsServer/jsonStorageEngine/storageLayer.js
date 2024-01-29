@@ -32,6 +32,16 @@ async function addToStorage(newObject){
     return await writeStorage(storageFilePath, storage)
 }
 
+async function updateStorage(modifiedObject){
+    const storage = await readStorage(storageFilePath);
+    const oldObject = storage.find(item=>item[primary_key]==modifiedObject[primary_key]);
+    if(oldObject) {Object.assign(oldObject, adapt(modifiedObject)); 
+        return await writeStorage(storageFilePath, storage);
+    }
+    return false;
+
+}
+
 async function removeFromStorage(value){
     const storage = await readStorage(storageFilePath);
     const i = storage.findIndex(item=>item[primary_key]==value);
@@ -46,12 +56,19 @@ async function getKeys(){
     return [...keys];
 }
 
+async function getNextFreeKey(){
+    const storage = await readStorage(storageFilePath);
+    return Math.max(...storage.map(item=>item.id),0)+1;
+}
+
 return {
     getAllFromStorage,
     getFromStorage,
     addToStorage, 
+    updateStorage,
     removeFromStorage,
     getKeys,
+    getNextFreeKey,
     primary_key
 }
 } // end of createStorageLayer

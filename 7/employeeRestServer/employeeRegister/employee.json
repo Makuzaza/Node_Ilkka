@@ -28,6 +28,13 @@
         "salary": 5000
     },
     {
+        "id": 22,
+        "firstname": "Maria",
+        "lastname": "Ku",
+        "department": "aa",
+        "salary": 10000
+    },
+    {
         "id": 13,
         "firstname": "Maria",
         "lastname": "as",
