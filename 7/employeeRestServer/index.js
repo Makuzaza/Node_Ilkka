@@ -35,6 +35,9 @@ app.use(express.json());
 
 app.get(`/rest`, (req, res) => res.json(RESOURCE))
 
+app.get(`/rest/${RESOURCE}/keys`, (req, res) =>
+    dataStorage.KEYS.then(result => res.json(result)));
+
 app.get(`/rest/${RESOURCE}`, (req, res) =>
     dataStorage.getAll().then(result => res.json(result)));
 

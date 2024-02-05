@@ -1,7 +1,7 @@
 [
     {
         "id": 2,
-        "firstname": "Matt",
+        "firstname": "Mattin",
         "lastname": "River",
         "department": "ict",
         "salary": 4000
@@ -35,17 +35,10 @@
         "salary": 10000
     },
     {
-        "id": 13,
-        "firstname": "Maria",
-        "lastname": "as",
-        "department": "22",
-        "salary": 22
-    },
-    {
         "id": 123,
-        "firstname": "Mary",
-        "lastname": "Jones",
-        "department": "It",
+        "firstname": "Maria",
+        "lastname": "grgd",
+        "department": "IT",
         "salary": 10000
     }
 ]
