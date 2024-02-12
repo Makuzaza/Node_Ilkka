@@ -40,5 +40,19 @@
         "lastname": "grgd",
         "department": "IT",
         "salary": 10000
+    },
+    {
+        "id": 1,
+        "firstname": "Maria",
+        "lastname": "grgd",
+        "department": "IT",
+        "salary": 10000
+    },
+    {
+        "id": 23,
+        "firstname": "Maria",
+        "lastname": "Kuznetsova",
+        "department": "IT",
+        "salary": 10000
     }
 ]
