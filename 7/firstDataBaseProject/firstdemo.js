@@ -39,7 +39,8 @@ async function test(){
         sql:'select * from employee'
     });
     console.log(result6);
-    console.log(result.meta);
+
+    // console.log(result.meta);
 
     // close the connection
 

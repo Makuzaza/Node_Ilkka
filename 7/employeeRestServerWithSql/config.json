@@ -1,0 +1,12 @@
+{
+    "port": 4000,
+    "host": "localhost",
+    "storageEngine": {
+        "folder": "sqlStorageEngine",
+        "dataStorageFile": "sqlDataStorageLayer.js"
+    },
+    "storage": {
+        "folder": "employeeSqlRegister",
+        "storageConfigFile": "sqlStorageConfig.json"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "sqlStatements": "sqlStatements.json",
+    "parameterFunctionsFile": "parameterFunctions.js",
+    "resource": "employees",
+    "options": {
+        "host":"localhost",
+        "port": 3306,
+        "user":"server",
+        "password":"1234",
+        "database":"employeedb",
+        "allowPublicKeyRetrieval":true
+    }
+}
